@@ -53,64 +53,64 @@ instead it is an array._
 
 ## Perform Simple Array Manipulations
 
-### `#using_push`
+### `using_push`
 
 This method takes in two arguments, an `Array` and a `String`. It adds that
 string to the end of the array using the `.push` method.
 
-### `#using_unshift`
+### `using_unshift`
 
 This method takes in two arguments, an `Array` and a `String` and adds that
 string to the front of the array using the `.unshift` method.
 
-### `#using_pop`
+### `using_pop`
 
 This method takes in argument of an `Array` and uses the `.pop` method to remove
 the last element from the array and return that element.
 
-### `#pop_with_args`
+### `pop_with_args`
 
 This method takes in an argument of an array and uses the pop method with an
 argument of 2 to remove the last two array items and return them
 
-### `#using_shift`
+### `using_shift`
 
 This method takes in an argument of an `Array` and uses the `.shift` method to
 remove the first item and return it.
 
-### `#shift_with_args`
+### `shift_with_args`
 
 This method takes in an argument of an `Array` and uses the `.shift` method with
 an argument of 2 to remove and return the first 2 items from the array.
 
-### `#using_concat`
+### `using_concat`
 
 This method takes in two arguments of two different arrays and uses the
 `.concat` method to add the contents of the second array to the first.
 
-### `#using_insert`
+### `using_insert`
 
 This method takes in two arguments, an `Array` and a new element to be added to
 the array. it uses the `.insert` method to add the new element to the 4th index
 of the array.
 
-### `#using_uniq`
+### `using_uniq`
 
 This method takes in an argument of an `Array` and uses the `.uniq` method to
 remove any duplicate items.
 
-### `#using_flatten`
+### `using_flatten`
 
 This method takes in an argument of an `Array` that contains other arrays and
 uses the `.flatten` method to return an array of strings.
 
-### `#using_delete`
+### `using_delete`
 
 This method takes in two arguments, an `Array` and a `String`, and uses the
 `.delete` method to remove any items from the array that are equal to that
 string.
 
-### `#using_delete_at`
+### `using_delete_at`
 
 This method takes in two arguments, an `Array` and an `Integer` and deletes the
 element at the index of the array that is equal to that integer.
@@ -122,4 +122,5 @@ provides, you can perform some of the same manipulations you've been practice
 much more simply.
 
 ## Resources
+
 * [Ruby Language](http://ruby-doc.org/core-2.2.0/)]
