@@ -71,7 +71,7 @@ the last element from the array and return that element.
 ### `pop_with_args`
 
 This method takes in an argument of an `Array` and uses the `.pop` method with an
-argument of 2 to remove the last two array items and return them
+argument of 2 to remove the last two array items and return them.
 
 ### `using_shift`
 
