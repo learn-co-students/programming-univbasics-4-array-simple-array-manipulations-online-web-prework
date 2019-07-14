@@ -42,7 +42,7 @@ end
 
 def using_insert (array, element)
   
-  array[4].insert(element)
+  array.insert(4, element)
   
 end
 
@@ -52,7 +52,7 @@ def using_uniq (array)
   
 end
 
-def using_flattern (array)
+def using_flatten (array)
   
   array.flatten
   
@@ -72,6 +72,6 @@ end
 
 def using_delete_at (array, interger)
   
-  array.delete[interger]
+  array.delete_at(interger)
   
 end
