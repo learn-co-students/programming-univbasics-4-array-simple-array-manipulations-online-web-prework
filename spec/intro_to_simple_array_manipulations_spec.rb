@@ -37,7 +37,7 @@ describe "using_pop" do
   end
 
   it "decreases the length of the array by 1" do 
-    expect(@continents.size).to eq(6)
+    expect(@continents.size).to eq(7)
   end
 end
 
@@ -51,7 +51,7 @@ describe "pop_with_args" do
   end 
 
   it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
+    expect(@dog_breeds.size).to eq(4)
   end
 end
 
@@ -65,7 +65,7 @@ describe "using_shift" do
   end
 
   it "decreases the length of the array by 1" do 
-    expect(@my_favorite_cities.size).to eq(7)
+    expect(@my_favorite_cities.size).to eq(8)
   end
 end
 
@@ -95,7 +95,7 @@ describe "using_concat" do
    end
 
    it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
+    expect(@my_favorite_things.length).to be > 1
    end
 end
 
