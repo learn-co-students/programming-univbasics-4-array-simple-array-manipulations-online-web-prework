@@ -38,7 +38,9 @@ element from an array:
 artists = ["Frida Kahlo", "Pablo Picasso", "Cai Guo-Qiang"]
 artists.pop
 # => "Cai Guo-Qiang"
-
+def array=["elements"]
+array.pop
+end 
 artists
 # => ["Frida Kahlo", "Pablo Picasso"]
 ```
