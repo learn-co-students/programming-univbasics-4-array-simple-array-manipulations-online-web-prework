@@ -8,3 +8,8 @@ def using_unshift(boros, new_boro)
   
   boros.unshift(new_boro)
 end
+
+def using_pop(rainbow_array)
+ 
+ rainbow_array.pop
+end
