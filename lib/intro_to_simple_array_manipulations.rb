@@ -20,7 +20,6 @@ def using_shift(favorite_ice_creams)
   end
   
   def pop_with_args(snoop)
-   
-  snoop.pop 
-  snoop.pop
+  
+  snoop.pop(2)
   end
