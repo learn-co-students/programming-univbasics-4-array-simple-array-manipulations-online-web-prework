@@ -23,3 +23,25 @@ def using_shift(favorite_ice_creams)
   
   snoop.pop(2)
   end
+  
+  def shift_with_args(favorite_ice_creams)
+    
+    favorite_ice_creams.shift(2)
+  end
+    
+def using_concat(things_i_like, things_i_love)
+
+things_i_like.concat(things_i_love) 
+end
+
+def using_insert(time_now_array, time_later)
+    
+ time_now_array.insert(4, time_later) 
+ end
+ 
+ def using_uniq(double)
+   
+ (double).insert  
+ end
+ 
+   
