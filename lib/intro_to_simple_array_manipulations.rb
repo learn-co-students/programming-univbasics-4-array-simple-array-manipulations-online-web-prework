@@ -41,7 +41,22 @@ def using_insert(time_now_array, time_later)
  
  def using_uniq(double)
    
- (double).insert  
+ (double).uniq
  end
  
-   
+def using_delete(lax_array, string)
+     
+  lax_array.delete(string)
+     end
+     
+def using_delete_at(famous_centers, shaq)
+  
+  famous_centers.delete_at(2)
+  
+end
+  
+def using_flatten(lakers_array)
+  
+  lakers_array.flatten
+     
+end     
