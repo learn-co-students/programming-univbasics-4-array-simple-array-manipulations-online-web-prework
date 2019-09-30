@@ -1,14 +1,25 @@
         ## Perform Simple Array Manipulations
 fruit = ["apples","bananas","grapes","oranges"]
+
 ### `using_push`
-fruit.push
+fruit = ["apples","bananas","grapes","oranges"]
+next_fruit = pear
+updated_array = using_push(fruit, next_fruit)
+expect(updated_array.last).to = (next_fruit)
+p next_fruit
+end
 
 ### `using_unshift`
-fruit.unshift
+fruit = ["apples","bananas","grapes","oranges"]
 
+next_fruit = pear
+updated_array = using_unshift (fruit, next_fruit)
+end
 
 ### `using_pop`
-fruit.pop
+ruit = ["apples","bananas","grapes","oranges"]
+
+next_fruit = pear
 
 ### `pop_with_args`
 fruit.pop[2]
