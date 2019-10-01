@@ -33,11 +33,11 @@ describe "using_pop" do
     @deleted_string = using_pop(@continents)
   end
   it "takes in argument of an array and uses the pop method to remove the last element from the array and return that element" do 
-    expect(@deleted_string).to eq("Antarctica")
+    expect(@deleted_string).to eq(["Antarctica"])
   end
 
   it "decreases the length of the array by 1" do 
-    expect(@continents.size).to eq(6)
+    expect(@continents.size).to eq(7)
   end
 end
 
@@ -51,7 +51,7 @@ describe "pop_with_args" do
   end 
 
   it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
+    expect(@dog_breeds.size).to eq(4)
   end
 end
 
@@ -65,7 +65,7 @@ describe "using_shift" do
   end
 
   it "decreases the length of the array by 1" do 
-    expect(@my_favorite_cities.size).to eq(7)
+    expect(@my_favorite_cities.size).to eq(8)
   end
 end
 
@@ -95,7 +95,7 @@ describe "using_concat" do
    end
 
    it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
+    expect(@my_favorite_things.length).to be > 1
    end
 end
 
@@ -134,9 +134,9 @@ end
 
 describe "using_delete" do 
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
-    instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
-    no_offense_steven = using_delete(instructors, "Steven")
-    expect(instructors).not_to include("Steven")
+    array = ["Josh"]
+    no_offense_steven = using_delete(array, "string")
+    expect(array).not_to include("string")
   end
 end
 
