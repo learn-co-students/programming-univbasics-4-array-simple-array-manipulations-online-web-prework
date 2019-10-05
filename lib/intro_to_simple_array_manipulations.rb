@@ -33,9 +33,13 @@ def using_flatten(array)
 end
 def using_delete(array,string)
    return array.delete('Steven')
+<<<<<<< HEAD
 end
 def using_delete_at(array,interger)
     return array.delete('Robocop')
     
 end
   
+=======
+end
+>>>>>>> ec6fec87eb14ce7cef6cd9fe1eb9e4afaa2519ba
