@@ -1,25 +1,47 @@
-colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
-    next_color = "violet"
-    colors_in_the_rainbow.push(next_color)
-    
-    colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
-     colors_in_the_rainbow.unshift("colors_in_the_rainbow")
-     colors_in_the_rainbow(1, 2)
-     
-     
-   colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
-     colors_in_the_rainbow.pop(2)
-     colors_in_the_rainbow.pop
-     
-     
-        colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
-     colors_in_the_rainbow.shift
-      colors_in_the_rainbow.shift(2)
-      
-      ["red", "orange", "yellow"].concat ( ["green", "blue", "indigo"] ) 
-      colors_in_the_rainbow.concat( [4, 5] )
-      colors_in_the_rainbow.insert
-      colors_in_the_rainbow.uniq 
-      colors_in_the_rainbow.flatten
-      colors_in_the_rainbow.delete("blue")
-      colors_in_the_rainbow.delete_at(2)
+def using_push(array, string)
+  array.push(string)
+end
+
+def using_unshift(array, string)
+  array.unshift(string)
+end
+
+def using_pop(array)
+  array.pop
+end
+
+def pop_with_args(array)
+  array.pop(2)
+end
+
+def using_shift(array)
+  array.shift
+end
+
+def shift_with_args(array)
+  array.shift(2)
+end
+
+def using_concat(array1, array2)
+  array1.concat(array2)
+end
+
+def using_insert(array, item)
+  array.insert(4, item)
+end
+
+def using_uniq(array)
+  array.uniq 
+end
+
+def using_flatten(array)
+  array.flatten 
+end
+
+def using_delete(array, string)
+  array.delete(string)
+end
+
+def using_delete_at(array, num)
+  array.delete_at(num)
+end
