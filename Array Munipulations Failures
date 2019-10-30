@@ -1,0 +1,206 @@
+
+using_push
+  takes in two arguments, an array and a string and adds that string to the endof the array using the push method (FAILED - 1)
+
+using_unshift
+  takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method (FAILED - 2)
+  increases the length of the array (FAILED - 3)
+
+using_pop
+  takes in argument of an array and uses the pop method to remove the last element from the array and return that element (FAILED - 4)
+  decreases the length of the array by 1 (FAILED - 5)
+
+pop_with_args
+  takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them (FAILED - 6)
+  decreases the length of the array by 2 (FAILED - 7)
+
+using_shift
+  takes in an argument of an array and uses the shift method to remove the first item and return it (FAILED - 8)
+  decreases the length of the array by 1 (FAILED - 9)
+
+shift_with_args
+  takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array (FAILED - 10)
+  decreases the length of the array by 2 (FAILED - 11)
+
+using_concat
+  takes in two arguments of two different arrays and uses the concat method to add the contents of the second array to the first (FAILED - 12)
+  increases the length of the first array (FAILED - 13)
+
+using_insert
+  takes in two arguments, an array and a new element to be added to the array. it uses the insert method to add the new element to the 4th index of the array (FAILED - 14)
+  increases the length of the array (FAILED - 15)
+
+using_uniq
+  takes in an argument of an array and uses the uniq method to remove any duplicate items (FAILED - 16)
+
+using_flatten
+  takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings (FAILED - 17)
+
+using_delete
+  takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string (FAILED - 18)
+
+using_delete_at
+  takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer (FAILED - 19)
+
+Failures:
+
+  1) using_push takes in two arguments, an array and a string and adds that string to the end of the array using the push method
+     Failure/Error: updated_array = using_push(colors_in_the_rainbow, next_color)
+
+     NoMethodError:
+       undefined method `using_push' for #<RSpec::ExampleGroups::UsingPush:0x0000000000dc2878>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:9:in `block (2 levels) in <top (required)>'
+
+  2) using_unshift takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method
+     Failure/Error: @updated_array = using_unshift(bouroughs_in_nyc, @new_neighborhood)
+
+     NoMethodError:
+       undefined method `using_unshift' for #<RSpec::ExampleGroups::UsingUnshift:0x0000000000db0920>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:18:in `block (2 levels) in <top (required)>'
+
+  3) using_unshift increases the length of the array
+     Failure/Error: @updated_array = using_unshift(bouroughs_in_nyc, @new_neighborhood)
+
+     NoMethodError:
+       undefined method `using_unshift' for #<RSpec::ExampleGroups::UsingUnshift:0x0000000000e54318>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:18:in `block (2 levels) in <top (required)>'
+
+  4) using_pop takes in argument of an array and uses the pop method to remove the last element from the array and return that element
+     Failure/Error: @deleted_string = using_pop(@continents)
+
+     NoMethodError:
+       undefined method `using_pop' for #<RSpec::ExampleGroups::UsingPop:0x0000000000e98518>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:33:in `block (2 levels) in <top (required)>'
+
+  5) using_pop decreases the length of the array by 1
+     Failure/Error: @deleted_string = using_pop(@continents)
+
+     NoMethodError:
+       undefined method `using_pop' for #<RSpec::ExampleGroups::UsingPop:0x0000000000e89ce8>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:33:in `block (2 levels) in <top (required)>'
+
+  6) pop_with_args takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them
+     Failure/Error: @small_dogs = pop_with_args(@dog_breeds)
+
+     NoMethodError:
+       undefined method `pop_with_args' for #<RSpec::ExampleGroups::PopWithArgs:0x0000000000ee3770>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:47:in `block (2 levels) in <top (required)>'
+
+  7) pop_with_args decreases the length of the array by 2
+     Failure/Error: @small_dogs = pop_with_args(@dog_breeds)
+
+     NoMethodError:
+       undefined method `pop_with_args' for #<RSpec::ExampleGroups::PopWithArgs:0x0000000000f123b8>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:47:in `block (2 levels) in <top (required)>'
+
+  8) using_shift takes in an argument of an array and uses the shift method to remove the first item and return it
+     Failure/Error: @im_so_over_this_city = using_shift(@my_favorite_cities)
+
+     NoMethodError:
+       undefined method `using_shift' for #<RSpec::ExampleGroups::UsingShift:0x000000000102d590>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:61:in `block (2 levels) in <top (required)>'
+
+  9) using_shift decreases the length of the array by 1
+     Failure/Error: @im_so_over_this_city = using_shift(@my_favorite_cities)
+
+     NoMethodError:
+       undefined method `using_shift' for #<RSpec::ExampleGroups::UsingShift:0x0000000001036e38>
+     # ./spec/intro_to_simple_array_manipulations_spec.rb:61:in `block (2 levels) in <top (required)>'
+
+  10) shift_with_args takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array
+      Failure/Error: @brands_removed = shift_with_args(@ice_cream_brands)
+
+      NoMethodError:
+        undefined method `shift_with_args' for #<RSpec::ExampleGroups::ShiftWithArgs:0x000000000104a9d8>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:75:in `block (2 levels) in <top (required)>'
+
+  11) shift_with_args decreases the length of the array by 2
+      Failure/Error: @brands_removed = shift_with_args(@ice_cream_brands)
+
+      NoMethodError:
+        undefined method `shift_with_args' for #<RSpec::ExampleGroups::ShiftWithArgs:0x0000000001040f28>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:75:in `block (2 levels) in <top (required)>'
+
+  12) using_concat takes in two arguments of two different arrays and uses the concat method to add the contents of the second array to the first
+      Failure/Error: @all_my_favs = using_concat(@my_favorite_things, more_favs)
+
+      NoMethodError:
+        undefined method `using_concat' for #<RSpec::ExampleGroups::UsingConcat:0x0000000001074850>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:91:in `block (2 levels) in <top (required)>'
+
+  13) using_concat increases the length of the first array
+      Failure/Error: @all_my_favs = using_concat(@my_favorite_things, more_favs)
+
+      NoMethodError:
+        undefined method `using_concat' for #<RSpec::ExampleGroups::UsingConcat:0x00000000010bbc78>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:91:in `block (2 levels) in <top (required)>'
+
+  14) using_insert takes in two arguments, an array and a new element to be added to the array. it uses the insert method to add the new element to the 4th index of the array
+      Failure/Error: @new_array = using_insert(@list_of_programming_languages, @another_language)
+
+      NoMethodError:
+        undefined method `using_insert' for #<RSpec::ExampleGroups::UsingInsert:0x00000000010d7108>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:106:in `block (2 levels) in <top (required)>'
+
+  15) using_insert increases the length of the array
+      Failure/Error: @new_array = using_insert(@list_of_programming_languages, @another_language)
+
+      NoMethodError:
+        undefined method `using_insert' for #<RSpec::ExampleGroups::UsingInsert:0x00000000010d4cf0>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:106:in `block (2 levels) in <top (required)>'
+
+  16) using_uniq takes in an argument of an array and uses the uniq method to remove any duplicate items
+      Failure/Error: new_array = using_uniq(haircuts)
+
+      NoMethodError:
+        undefined method `using_uniq' for #<RSpec::ExampleGroups::UsingUniq:0x00000000010eaa50>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:121:in `block (2 levels) in <top (required)>'
+
+  17) using_flatten takes in an argument of an array that contains other arraysand uses the flatten method to return an array of strings
+      Failure/Error: flat_array = using_flatten(instruments)
+
+      NoMethodError:
+        undefined method `using_flatten' for #<RSpec::ExampleGroups::UsingFlatten:0x00000000010ed070>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:129:in `block (2 levels) in <top (required)>'
+
+  18) using_delete takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string
+      Failure/Error: no_offense_steven = using_delete(instructors, "Steven")
+
+      NoMethodError:
+        undefined method `using_delete' for #<RSpec::ExampleGroups::UsingDelete:0x0000000001103d98>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:138:in `block (2 levels) in <top (required)>'
+
+  19) using_delete_at takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer
+      Failure/Error: deleted_robot = using_delete_at(famous_robots, 2)
+
+      NoMethodError:
+        undefined method `using_delete_at' for #<RSpec::ExampleGroups::UsingDeleteAt:0x0000000001121410>
+      # ./spec/intro_to_simple_array_manipulations_spec.rb:146:in `block (2 levels) in <top (required)>'
+
+Finished in 0.0092 seconds (files took 0.321 seconds to load)
+19 examples, 19 failures
+
+Failed examples:
+
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:6 # using_push takes in two arguments, an array and a string and adds that string to the end of the array using the push method
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:21 # using_unshift takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:25 # using_unshift increases the length of the array
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:35 # using_pop takes in argument of an array and uses the pop method to remove the last element from the array and return that element
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:39 # using_pop decreases the length of the array by 1
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:49 # pop_with_args takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:53 # pop_with_args decreases the length of the array by 2
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:63 # using_shift takesin an argument of an array and uses the shift method to remove the first item and return it
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:67 # using_shift decreases the length of the array by 1
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:78 # shift_with_args takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:82 # shift_with_args decreases the length of the array by 2
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:93 # using_concat takes in two arguments of two different arrays and uses the concat method to add thecontents of the second array to the first
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:97 # using_concat increases the length of the first array
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:109 # using_insert takes in two arguments, an array and a new element to be added to the array. it uses the insert method to add the new element to the 4th index of the array
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:113 # using_insert increases the length of the array
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:119 # using_uniq takesin an argument of an array and uses the uniq method to remove any duplicate items
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:127 # using_flatten takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:136 # using_delete takes in two arguments, an array and a string, and uses the delete method to removeany items from the array that are equal to that string
+rspec ./spec/intro_to_simple_array_manipulations_spec.rb:144 # using_delete_at takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer
+
+[20:20:21] (master) programming-univbasics-4-array-simple-array-manipulations-online-web-prework
+// ♥
