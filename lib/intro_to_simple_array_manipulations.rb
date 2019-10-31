@@ -17,3 +17,8 @@ end
 def using_shift(array)
 using_shift = array.shift
 end
+
+def shift_with_args(small_dogs)
+chihuahua_breed = small_dogs.shift(2)
+end
+
