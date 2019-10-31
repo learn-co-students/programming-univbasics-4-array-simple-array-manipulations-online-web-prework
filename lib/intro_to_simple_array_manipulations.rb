@@ -11,8 +11,7 @@ using_pop = array.pop
 end
 
 def pop_with_args(small_dogs)
-chihuahua_breed = small_dogs.pop(1)
-shiba_Inu_breed = small_dogs.pop(2)
+chihuahua_breed = small_dogs.pop(2)
 end
 
 def using_shift(array)
