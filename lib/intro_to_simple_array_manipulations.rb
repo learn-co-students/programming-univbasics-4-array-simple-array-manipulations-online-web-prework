@@ -6,8 +6,8 @@ end
   array.unshift(string) 
 end
 
-def using_pop(array1, array2, element)
-element = array2.pop
+def using_pop(array, element)
+using_pop = element.pop
   
 p using_pop
   
