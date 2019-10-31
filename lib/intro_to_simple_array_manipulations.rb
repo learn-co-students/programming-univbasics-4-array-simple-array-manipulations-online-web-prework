@@ -6,11 +6,6 @@ end
   array.unshift(string) 
 end
 
-def using_pop(array, element)
-using_pop = element.pop
-  
-p using_pop
-  
-p element
-
+def using_pop(array)
+using_pop = array.pop
 end
