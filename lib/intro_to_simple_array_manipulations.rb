@@ -22,3 +22,10 @@ def shift_with_args(small_dogs)
 chihuahua_breed = small_dogs.shift(2)
 end
 
+def using_concat(my_favorite_things, more_favs)
+my_favorite_things.concat(more_favs) 
+end
+
+def using_insert(array, element)
+  array.insert(4, element)
+end
