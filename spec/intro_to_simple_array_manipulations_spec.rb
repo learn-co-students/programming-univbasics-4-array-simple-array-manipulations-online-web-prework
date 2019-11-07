@@ -147,3 +147,4 @@ describe "using_delete_at" do
     expect(deleted_robot).to eq("Robocop")
   end
 end
+
