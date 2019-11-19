@@ -48,3 +48,13 @@ def using_uniq (haircuts)
   haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob"]
   haircuts.uniq
 end
+
+
+  instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
+  instruments.flatten
+end
+
+def (array, string)
+array = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
+string = "Steven"
+instructors.delete(string)
