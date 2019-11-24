@@ -5,26 +5,19 @@ def using_push(array, string)
   array.push("violet")
   end
   
-  
-  
 def using_unshift(array, string)
 array.unshift(string)
 end
 
-
-
 def using_pop(array)
-  array.pop(1)
+  array.pop
 end
 
-
-
-def pop_with_args(string)
-args= string.pop(2)
-  puts args
+def pop_with_args(array)
+array= array.pop(2)
+ return array
 end
 
-
-def using_shift(array, string)
+def using_shift(array)
   array.shift
 end
