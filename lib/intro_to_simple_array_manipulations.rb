@@ -7,18 +7,24 @@ def using_push(array, string)
   
   
   
-def using_unshift(array, element)
-array.unshift("Staten Island")
+def using_unshift(array, string)
+array.unshift(string)
 end
 
 
 
-def using_unshift(array, string)
-  
+def using_pop(array)
+  array.pop(1)
 end
 
 
 
-def using_unshift(array, string)
-  
+def pop_with_args(string)
+args= string.pop(2)
+  puts args
+end
+
+
+def using_shift(array, string)
+  array.shift
 end
