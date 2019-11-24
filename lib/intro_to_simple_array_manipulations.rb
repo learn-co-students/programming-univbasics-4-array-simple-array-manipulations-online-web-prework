@@ -21,3 +21,15 @@ end
 def using_shift(array)
   array.shift
 end
+
+def shift_with_args(array)
+  array= array.shift(2)
+  return array
+  end
+  
+  def using_concat(array, element)
+  array.concat(element)
+  return array
+  end
+  
+  
