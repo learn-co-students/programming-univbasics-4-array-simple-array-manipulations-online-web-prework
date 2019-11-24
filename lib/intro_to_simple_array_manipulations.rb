@@ -7,9 +7,8 @@ def using_push(array, string)
   
   
   
-def using_unshift(array, string)
-  array.unshift("Staten Island")
-  
+def using_unshift(array, element)
+array.unshift("Staten Island")
 end
 
 
