@@ -1,9 +1,7 @@
 
-
-
 def using_push(array, string)
-  array.push("violet")
-  end
+  array.push("violet") 
+end
   
 def using_unshift(array, string)
 array.unshift(string)
@@ -25,11 +23,18 @@ end
 def shift_with_args(array)
   array= array.shift(2)
   return array
-  end
+end
   
-  def using_concat(array, element)
-  array.concat(element)
+def using_concat(array, element)
+ array= array.concat(element)
   return array
-  end
+end
   
+ def using_insert(array, element)
+array= array.insert(4, element)
+return array
+end
+  
+  
+
   
