@@ -1,3 +1,5 @@
+
+
 def using_push(array, string)
   array.push(string)
 end
@@ -27,15 +29,15 @@ def using_concat(arr1, arr2)
 end 
 
 def using_insert(array, element)
-  array.insert(element, 4)
+  array.insert(4, element)
 end 
 
 def using_uniq(array)
   array.uniq 
 end 
 
-def using_flatten(arr1, arr2)
-  arr1.flatten(arr2, 2)
+def using_flatten(array)
+  array.flatten
 end 
 
 def using_delete(array, string)
