@@ -20,9 +20,10 @@ for the methods you need to use to solve the problems in this lab.
 
 ## Identify the Result of Method Calls on Arrays
 
-As you read the method descriptions, make sure to pay attention to understanding
-what the method returns. For instance, when you call `.push` on an array, it
-returns the updated array:
+In this lab, your task is to create methods that use some of the common Array
+methods. As you read the method descriptions, make sure to pay attention to
+understanding what the method returns. For instance, when you call `.push` on an
+array, it returns the updated array:
 
 ```ruby
 artists = ["Hozier", "Ariana Grande", "Usher"]
@@ -53,66 +54,92 @@ instead it is an array._
 
 ## Perform Simple Array Manipulations
 
+Create the methods detailed below in
+`lib/intro_to_simple_array_manipulations.rb`. Let's work through the first
+together!
+
 ### `using_push`
 
-This method takes in two arguments, an `Array` and a `String`. It adds that
+This method takes in two parameters, an `Array` and a `String`. It adds that
 string to the end of the array using the `.push` method.
+
+To start, we know the method name, and that it takes in two parameters. We can
+name theese parameters `array` and `string` for simplicity.
+
+```ruby
+def using_push(array, string)
+
+end
+```
+
+With the method created, we can add the implementation. As we saw in the previous
+example, we can append `.push` to any array, pass in a value, and that value will
+get added to the array.
+
+```ruby
+def using_push(array, string)
+  array.push(string)
+end
+```
+
+Calling `array.push(string)` will return the updated array, which happens to be
+what we `using_push` shoulds return. The rest are up to you solve!
 
 ### `using_unshift`
 
-This method takes in two arguments, an `Array` and a `String` and adds that
+This method takes in two parameters, an `Array` and a `String` and adds that
 string to the front of the array using the `.unshift` method.
 
 ### `using_pop`
 
-This method takes in argument of an `Array` and uses the `.pop` method to remove
+This method takes in parameter of an `Array` and uses the `.pop` method to remove
 the last element from the array and return that element.
 
 ### `pop_with_args`
 
-This method takes in an argument of an `Array` and uses the `.pop` method with an
-argument of 2 to remove the last two array items and return them.
+This method takes in an parameter of an `Array` and uses the `.pop` method with an
+parameter of 2 to remove the last two array items and return them.
 
 ### `using_shift`
 
-This method takes in an argument of an `Array` and uses the `.shift` method to
+This method takes in an parameter of an `Array` and uses the `.shift` method to
 remove the first item and return it.
 
 ### `shift_with_args`
 
-This method takes in an argument of an `Array` and uses the `.shift` method with
-an argument of 2 to remove and return the first 2 items from the array.
+This method takes in an parameter of an `Array` and uses the `.shift` method with
+an parameter of 2 to remove and return the first 2 items from the array.
 
 ### `using_concat`
 
-This method takes in two arguments of two different arrays and uses the
+This method takes in two parameters of two different arrays and uses the
 `.concat` method to add the contents of the second array to the first.
 
 ### `using_insert`
 
-This method takes in two arguments, an `Array` and a new element to be added to
+This method takes in two parameters, an `Array` and a new element to be added to
 the array. it uses the `.insert` method to add the new element to the 4th index
 of the array.
 
 ### `using_uniq`
 
-This method takes in an argument of an `Array` and uses the `.uniq` method to
+This method takes in an parameter of an `Array` and uses the `.uniq` method to
 remove any duplicate items.
 
 ### `using_flatten`
 
-This method takes in an argument of an `Array` that contains other arrays and
+This method takes in an parameter of an `Array` that contains other arrays and
 uses the `.flatten` method to return an array of strings.
 
 ### `using_delete`
 
-This method takes in two arguments, an `Array` and a `String`, and uses the
+This method takes in two parameters, an `Array` and a `String`, and uses the
 `.delete` method to remove any items from the array that are equal to that
 string.
 
 ### `using_delete_at`
 
-This method takes in two arguments, an `Array` and an `Integer` and deletes the
+This method takes in two parameters, an `Array` and an `Integer` and deletes the
 element at the index of the array that is equal to that integer.
 
 ## Conclusion
